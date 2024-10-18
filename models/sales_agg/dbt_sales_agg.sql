@@ -1,3 +1,6 @@
+{{ config(materialized='table') }}
+
+
 SELECT
 md.member_id,
 md.member_first_name,
@@ -54,4 +57,4 @@ id.item_size,
 id.item_type_code,
 sf.transaction_date,
 sf.activity_department_id,
-sf.register_id;
+sf.register_id
